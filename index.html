@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HR Strategic Analytics Portfolio</title>
+    <style>
+        :root { --primary: #0f172a; --accent: #2563eb; --text: #334155; --bg: #f8fafc; }
+        body { font-family: 'Inter', -apple-system, system-ui, sans-serif; background: #ffffff; color: var(--text); line-height: 1.7; margin: 0; }
+        
+        header { background: var(--bg); padding: 80px 20px; text-align: center; border-bottom: 1px solid #e2e8f0; }
+        .hero-title { font-size: 2.5rem; font-weight: 800; color: var(--primary); margin: 0; letter-spacing: -1px; }
+        .hero-subtitle { font-size: 1.1rem; color: #64748b; margin-top: 15px; max-width: 850px; margin-left: auto; margin-right: auto; }
+
+        .container { max-width: 1100px; margin: 0 auto; padding: 50px 20px; }
+        
+        /* Dashboard Visuals Grid */
+        .dashboard-grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(480px, 1fr)); 
+            gap: 25px; 
+            margin-bottom: 70px;
+        }
+        .img-container { 
+            background: #fff; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.06); 
+            border: 1px solid #e5e7eb; overflow: hidden; transition: transform 0.3s ease; 
+        }
+        .img-container:hover { transform: translateY(-5px); }
+        .img-container img { width: 100%; display: block; height: auto; }
+        .img-label { padding: 12px; text-align: center; font-size: 0.85rem; color: #64748b; background: #fcfcfc; border-top: 1px solid #f1f1f1; font-weight: 500; }
+
+        /* Report Content Section */
+        .report-card { background: #ffffff; border-radius: 20px; padding: 50px; border: 1px solid #e2e8f0; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.02); }
+        .project-title { font-size: 1.8rem; color: var(--primary); margin-bottom: 25px; display: flex; align-items: center; font-weight: 700; }
+        .project-title::before { content: ""; width: 4px; height: 28px; background: var(--accent); margin-right: 15px; border-radius: 2px; }
+        
+        .section-intro { background: #f1f5f9; padding: 20px; border-radius: 8px; border-left: 4px solid var(--accent); margin-bottom: 40px; font-size: 1rem; color: var(--primary); }
+        
+        .analysis-block { margin-bottom: 35px; }
+        .analysis-block h3 { color: var(--primary); font-size: 1.3rem; margin-bottom: 15px; border-bottom: 1px solid #f1f5f9; padding-bottom: 8px; }
+        .analysis-block ul { padding-left: 20px; }
+        .analysis-block li { margin-bottom: 12px; }
+        .analysis-block b { color: var(--primary); }
+
+        .recommendation-box { background: #eff6ff; padding: 25px; border-radius: 12px; border: 1px dashed var(--accent); margin-top: 40px; }
+        .recommendation-box h4 { margin-top: 0; color: var(--accent); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 15px; }
+
+        .download-btn {
+            color: var(--accent); 
+            text-decoration: none; 
+            font-weight: 700; 
+            border: 1px solid var(--accent); 
+            padding: 10px 20px; 
+            border-radius: 6px; 
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+        .download-btn:hover {
+            background: var(--accent);
+            color: white;
+        }
+
+        footer { text-align: center; padding: 60px 20px; color: #94a3b8; font-size: 0.85rem; }
+        @media (max-width: 768px) { .dashboard-grid { grid-template-columns: 1fr; } .report-card { padding: 30px; } }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1 class="hero-title">Workforce Strategic Analytics Report</h1>
+    <p class="hero-subtitle">Interactive Human Resources Intelligence System (2006-2019)</p>
+</header>
+
+<div class="container">
+    <div class="dashboard-grid">
+        <div class="img-container"><img src="dashboard1.png" alt="Executive Summary"><div class="img-label">Executive Summary</div></div>
+        <div class="img-container"><img src="dashboard2.png" alt="Demographics"><div class="img-label">Diversity & Demographics</div></div>
+        <div class="img-container"><img src="dashboard3.png" alt="Performance"><div class="img-label">Performance & Engagement</div></div>
+        <div class="img-container"><img src="dashboard4.png" alt="Turnover"><div class="img-label">Turnover Decomposition</div></div>
+        <div class="img-container"><img src="dashboard5.png" alt="ROI"><div class="img-label">Recruitment ROI Analysis</div></div>
+        <div class="img-container"><img src="dashboard6.png" alt="Attendance"><div class="img-label">Risk & Attendance Tracking</div></div>
+    </div>
+
+    <section class="report-card">
+        <h2 class="project-title">Project Narrative & Strategic Insights</h2>
+        
+        <div class="section-intro">
+            Through Power BI, I developed a dynamic HR intelligence system analyzing workforce data from <b>2006 to 2019</b>. Using interactive year-slicers, stakeholders can seamlessly monitor labor costs, performance distribution, and retention risks across different fiscal periods. 
+        </div>
+
+        <p>Taking <b>2016</b> as a representative case study (221 staff), the following diagnostic insights were identified:</p>
+
+        <div class="analysis-block">
+            <h3>1. Workforce & Compensation Dynamics</h3>
+            <ul>
+                <li><b>Departmental Focus:</b> The Production department remains the core unit, accounting for <b>64.25%</b> (142 staff) of the headcount.</li>
+                <li><b>Salary Insights:</b> While the company average is $69.32K, a significant gap exists between Executive levels ($250K) and Production ($59.9K). This reflects a typical organizational structure with a single executive role.</li>
+                <li><b>Pay Equity:</b> Preliminary analysis of gender pay distribution shows no immediately visible disparity; however, further analysis at the role and grade level is recommended to validate pay equity comprehensively.</li>
+            </ul>
+        </div>
+
+        <div class="analysis-block">
+            <h3>2. Retention & High-Performer Attrition</h3>
+            <ul>
+                <li><b>Attrition Warning:</b> The Production department recorded the highest turnover rate at <b>12.68%</b>, followed by IT/IS at 11.11%.</li>
+                <li><b>"Brain Drain":</b> Among terminated employees in Production, a notable proportion were high performers. Employees rated as "Exceeds" accounted for <b>14.29%</b> of Production department exits.</li>
+                <li><b>Root Cause:</b> Exit drivers are primarily linked to "Unhappiness" and "External Opportunities" rather than salary alone, based on termination reason data.</li>
+            </ul>
+        </div>
+
+        <div class="analysis-block">
+            <h3>3. Performance & Predictive Sentiment</h3>
+            <ul>
+                <li><b>Leading Indicators:</b> Employee satisfaction scores below <b>3.0</b> show a strong correlation with future PIP (Performance Improvement Plan) status, suggesting that low engagement is a reliable leading indicator of performance decline.</li>
+                <li><b>Predictive Risk:</b> Low sentiment can serve as an early warning signal for productivity deterioration, enabling proactive intervention before performance issues escalate.</li>
+            </ul>
+        </div>
+
+        <div class="analysis-block">
+            <h3>4. Recruitment ROI & Operational Risk</h3>
+            <ul>
+                <li><b>Effective Channels:</b> Based on preliminary cross-analysis, <b>Employee Referrals</b> tend to yield candidates with higher average salaries ($78.2K) and demonstrate lower turnover rates compared to other sources, indicating strong candidate quality and cultural fit.</li>
+                <li><b>Attendance Risk:</b> Several employees identified as "High Absence Risk" have reached 20 days of absence, which correlates with a <b>33.33%</b> turnover rate among this group—signaling potential burnout or imminent resignation.</li>
+            </ul>
+        </div>
+
+        <div class="recommendation-box">
+            <h4>Strategic Recommendations</h4>
+            <ul>
+                <li><b>Implement Stay Interviews</b> for high-performing staff in Production to address cultural dissatisfaction and understand retention drivers beyond compensation.</li>
+                <li><b>Reallocate Recruitment Budget</b> from high-churn job boards to Internal Referral Incentive programs, leveraging the demonstrated ROI of employee referrals.</li>
+                <li><b>Establish a "Critical Satisfaction Threshold" at 3.5</b> to trigger proactive HR counseling and intervention, enabling early detection and support for employees at risk of disengagement or performance decline.</li>
+            </ul>
+        </div>
+
+        <div style="margin-top: 40px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px;">
+            <div style="font-size: 0.85rem; color: #94a3b8;">
+                <b>Technical Stack:</b> Power BI Desktop, DAX, SQL, Diagnostic Analytics
+            </div>
+            <a href="hrdada%200325.pbix" download="hrdada_0325.pbix" class="download-btn">
+                ↓ Download .PBIX File
+            </a>
+        </div>
+    </section>
+</div>
+
+<footer>
+    <p>PORTFOLIO | DATA ANALYTICS & STRATEGIC INSIGHTS</p>
+</footer>
+
+</body>
+</html>
